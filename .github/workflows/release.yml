@@ -29,7 +29,7 @@ jobs:
       - uses: mongodb-labs/drivers-github-tools/setup@v2
         with:
           aws_role_arn: ${{ secrets.AWS_ROLE_ARN }}
-          aws_region_name: ${{ vars.AWS_REGION_NAME }}
+          aws_region_name: ${{ secrets.AWS_REGION_NAME }}
           aws_secret_id: ${{ secrets.AWS_SECRET_ID }}
       - name: actions/compress_sign_and_upload
         uses: ./.github/actions/compress_sign_and_upload
