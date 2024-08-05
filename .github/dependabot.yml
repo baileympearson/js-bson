@@ -14,7 +14,6 @@ updates:
         versions: [">=5.0.0"]
       - dependency-name: "sinon-chai"
         versions: [">=4.0.0"]
-
-groups:
-  development-dependencies:
-    dependency-type: "development"
+    groups:
+      development-dependencies:
+        dependency-type: "development"
