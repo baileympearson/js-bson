@@ -9,11 +9,11 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
-  ignore:
-    - dependency-name: "chai"
-      versions: [">=5.0.0"]
-    - dependency-name: "sinon-chai"
-      versions: [">=4.0.0"]
+    ignore:
+      - dependency-name: "chai"
+        versions: [">=5.0.0"]
+      - dependency-name: "sinon-chai"
+        versions: [">=4.0.0"]
 
 groups:
   development-dependencies:
