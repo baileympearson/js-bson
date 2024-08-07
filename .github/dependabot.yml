@@ -19,6 +19,8 @@ updates:
       # nyc is Node18+ only starting on nyc@16.x.
       - dependency-name: "nyc"
         versions: [">=16.0.0"]
+      # do not update TS as a part of regular work.
+      - dependency-name: "typescript"
     groups:
       development-dependencies:
         dependency-type: "development"
@@ -26,3 +28,10 @@ updates:
         update-types:
         - "minor"
         - "patch"
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "monthly"
+    allow:
+      # do not update TS as a part of regular work.
+      - dependency-name: "typescript"
